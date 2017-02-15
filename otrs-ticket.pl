@@ -73,16 +73,16 @@ my $dbpass = '';
 my $dbtable = 'TicketIDAssoc';
 # if the event_type is known, then change the ticket state
 my %otrs_states = (
-	'ACKNOWLEDGEMENT' => 'open',
+	'ACKNOWLEDGEMENT' => 'Aberto',
 	'RECOVERY' => 'recovered',
 );
 my %otrs_defaults = (
-	'Queue' => 'UNIX',
+	'Queue' => 'REPAD-Monitoramento',
 	'PriorityID' => '3',
 	'Type' => 'Incident',
 	'State' => 'new',
 	'CustomerUser' => 'unknown',
-	'Service' => 'Infrastructure::Server::Unix/Linux',
+	#'Service' => 'Infrastructure::Server::Unix/Linux',
 );
 my $TicketID;
 my $TicketNumber;
